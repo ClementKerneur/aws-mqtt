@@ -26,14 +26,12 @@
     "compile": "rm -rf lib && babel --presets es2015 -d lib src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "babel-cli": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0"
-  },
   "dependencies": {
     "aws-signature-v4": "^1.0.1",
     "mqtt": "^2.0.0",
-    "mqtt-websocket-stream": "^0.1.0"
+    "mqtt-websocket-stream": "^0.1.0",
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0"
   },
   "peerDependencies": {
     "aws-sdk": "^2.6.3"
