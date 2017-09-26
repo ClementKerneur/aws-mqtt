@@ -6,7 +6,6 @@ export default (WebSocket, awsOptions) => {
   const createWebSocketWithCredentials = (callback) => {
     urlSigner.getAndSign({ expiration: 15 }, (err, url) => {
       if (err) return callback(err)
-      // console.log('Connecting to', url)
       callback(null, new WebSocket(url, ['mqttv3.1']))
     })
   }
